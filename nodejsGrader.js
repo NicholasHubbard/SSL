@@ -1,5 +1,5 @@
 // Nicholas Hubbard
-// Assignment: nodejs Grader
+// Assignment: nodejs Grader Class 0520
 
 // Creating a class to take in object data
 class Grader{
