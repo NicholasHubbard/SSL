@@ -1,5 +1,5 @@
 # Nicholas Hubbard
-# Assignment Pyhton Grader
+# Assignment Pyhton Grader Class 0520
 
 import sys
 
