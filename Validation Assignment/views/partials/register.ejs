@@ -1,0 +1,43 @@
+<!-- register.ejs /views/partials/register.ejs -->
+
+  <div class="container" style="z-index: 100;
+    background-color: #333a40;
+    margin: 0 auto;
+    color: white;
+    position: fixed;
+    width: 50%;
+    padding-top: 5px;
+    right: 0px;
+    border-radius: 10px;
+    padding: 11px;
+    font-size: 14px;">
+
+  		<form action="/login" method="POST" >
+        <ul style="list-style-type:none">
+    			<li><input type="text" name="firstname" placeholder="First Name" style="width:90%; margin-bottom: 1em"></li>
+    			<li><input type="text" name="lastname" placeholder="Last Name" style="width:90%; margin-bottom: 1em"></li>
+          <li><input type="text" name="address" placeholder="Address" style="width:90%; margin-bottom: 1em"></li>
+    			<li><input type="text" name="city" placeholder="City" style="width:90%; margin-bottom: 1em"></li>
+          <li><input type="text" name="state" placeholder="State" style="width:90%; margin-bottom: 1em"></li>
+    			<li><input type="number" name="zip" placeholder="Zip Code" style="width:90%; margin-bottom: 1em"></li>
+          <li>Age: <select name="age" style="margin-bottom: 1em">
+            <% var options = []; %>
+            <% for(var i = 0; i <= 100; i++) { %>
+              <option value='<%= i %>'><%= i %></option>
+            <% } %>
+          </select></li>
+    			<li>
+            <label>Gender:&nbsp</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male&nbsp</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female&nbsp</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+          </li>
+          <li><input type="checkbox" name="consent" placeholder="Consent" style="margin-bottom: 1em">&nbsp Agree to terms of Service</li>
+    			<li><textarea name="bio" placeholder="Bio" style="width:90%; margin-bottom: 1em"></textarea></li>
+    			<li><input type="submit"></li>
+        </ul>
+  		</form>
+  	</div>
